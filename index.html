@@ -11,6 +11,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
@@ -170,7 +171,134 @@
 					</div>
 				</div>
 			</section>
+			<section class="features">
+				<div class="container features-container">
+					<h2 class="features-title main-title">App features</h2>
+					<p class="features-descr main-descr">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.
+					</p>
+					<div class="features-content-wrap">
+						<div class="features-item features-item--center">
+							<svg class="features-item-icon" width="50" height="50">
+								<use href="./images/svg/icon.svg#icon-features-1"></use>
+							</svg>
+							<h3 class="features-item-title">Full free chat</h3>
+							<p class="features-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+						<div class="features-content">
+							<ul class="features-list">
+								<li class="features-item">
+									<svg class="features-item-icon" width="50" height="50">
+										<use href="./images/svg/icon.svg#icon-features-2"></use>
+									</svg>
+									<h3 class="features-item-title">unlimiter features</h3>
+									<p class="features-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+								<li class="features-item">
+									<svg class="features-item-icon" width="50" height="50">
+										<use href="./images/svg/icon.svg#icon-features-3"></use>
+									</svg>
+									<h3 class="features-item-title">awsome ui design</h3>
+									<p class="features-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+							</ul>
+							<img
+								srcset="./images/features-img-min.jpg 1x, ./images/features-img-2x-min.jpg 2x"
+								src="./images/features-img-min.jpg"
+								alt=""
+								class="features-img"
+							/>
+							<ul class="features-list">
+								<li class="features-item">
+									<svg class="features-item-icon" width="50" height="50">
+										<use href="./images/svg/icon.svg#icon-features-4"></use>
+									</svg>
+									<h3 class="features-item-title">iso & androind version</h3>
+									<p class="features-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+								<li class="features-item">
+									<svg class="features-item-icon" width="50" height="50">
+										<use href="./images/svg/icon.svg#icon-features-5"></use>
+									</svg>
+									<h3 class="features-item-title">retina ready greaphics</h3>
+									<p class="features-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								</li>
+							</ul>
+						</div>
+						<div class="features-item features-item--center">
+							<svg class="features-item-icon" width="50" height="50">
+								<use href="./images/svg/icon.svg#icon-features-6"></use>
+							</svg>
+							<h3 class="features-item-title">24/7 support by real pepole</h3>
+							<p class="features-item-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="app">
+				<div class="container app-container">
+					<h2 class="app-title main-title">Checkout Our App Interface Look</h2>
+					<p class="app-descr main-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
+					<!-- Slider main container -->
+					<div class="swiper">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+							<!-- Slides -->
+							<div class="swiper-slide">
+								<img
+									srcset="./images/app-1-min.png 1x, ./images/app-1-2x-min.png 2x"
+									src="./images/app-1-min.png"
+									alt="App"
+									class="app-img"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									srcset="./images/app-2-min.png 1x, ./images/app-2-2x-min.png 2x"
+									src="./images/app-2-min.png"
+									alt="App"
+									class="app-img"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									srcset="./images/app-3-min.png 1x, ./images/app-3-2x-min.png 2x"
+									src="./images/app-3-min.png"
+									alt="App"
+									class="app-img"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									srcset="./images/app-4-min.png 1x, ./images/app-4-2x-min.png 2x"
+									src="./images/app-4-min.png"
+									alt="App"
+									class="app-img"
+								/>
+							</div>
+							<div class="swiper-slide">
+								<img
+									srcset="./images/app-5-min.png 1x, ./images/app-5-2x-min.png 2x"
+									src="./images/app-5-min.png"
+									alt="App"
+									class="app-img"
+								/>
+							</div>
+							...
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+
+						<!-- If we need scrollbar -->
+					</div>
+				</div>
+			</section>
 		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

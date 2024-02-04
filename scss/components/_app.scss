@@ -1,0 +1,27 @@
+.app {
+	padding: 60px 0;
+
+	&-descr {
+		margin-bottom: 40px;
+	}
+
+	& .swiper {
+		width: 100%;
+		&-slide {
+			display: flex;
+			justify-content: center;
+
+			& img {
+				height: 444px;
+				margin-bottom: 50px;
+			}
+		}
+
+		&-button-prev,
+		&-button-next {
+			@media screen and (max-width: 1175px) {
+				display: none;
+			}
+		}
+	}
+}
