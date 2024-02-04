@@ -11,3 +11,20 @@ body {
 	padding: 0 16px;
 	margin: 0 auto;
 }
+
+.main-title {
+	margin-bottom: 18px;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 1.5;
+	text-transform: uppercase;
+	color: $dark-color;
+	text-align: center;
+}
+
+.main-descr {
+	max-width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	color: $grey-color;
+}

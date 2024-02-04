@@ -51,7 +51,7 @@
 					</ul>
 				</div>
 				<nav class="header-nav">
-					<button type="button" class="header-burger-btn">
+					<button type="button" class="header-burger-btn" data-burger-open>
 						<span></span>
 						<span></span>
 						<span></span>
@@ -80,32 +80,97 @@
 					</ul>
 					<button class="header-nav-btn">DOWNLOAD</button>
 				</nav>
-				<nav class="header-burger">
-					<button type="button" class="header-burger-close"></button>
+				<nav class="header-burger" data-burger>
+					<button type="button" class="header-burger-close" data-burger-close>
+						<svg class="header-burger-close-icon" width="12" height="12">
+							<use href="images/svg/icon.svg#icon-close-burger"></use>
+						</svg>
+					</button>
 					<ul class="header-burger-list">
-						<li class="header-burger-item">
+						<li class="header-burger-item" data-burger-link>
 							<a href="#!" class="header-burger-link">Home</a>
 						</li>
-						<li class="header-burger-item">
+						<li class="header-burger-item" data-burger-link>
 							<a href="#!" class="header-burger-link">About</a>
 						</li>
-						<li class="header-burger-item">
+						<li class="header-burger-item" data-burger-link>
 							<a href="#!" class="header-burger-link">Features</a>
 						</li>
-						<li class="header-burger-item">
+						<li class="header-burger-item" data-burger-link>
 							<a href="#!" class="header-burger-link">Screenshot</a>
 						</li>
-						<li class="header-burger-item">
+						<li class="header-burger-item" data-burger-link>
 							<a href="#!" class="header-burger-link">Blog</a>
 						</li>
 					</ul>
 				</nav>
 				<div class="hero">
-					<div class="hero-content"></div>
-					<img src="" alt="" class="hero-img" />
+					<div class="hero-content">
+						<h1 class="hero-content-title">A Great App Makes Your Life Better</h1>
+						<p class="hero-content-descr">
+							Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+						</p>
+						<p class="hero-content-subtitle">Download App Now</p>
+						<ul class="hero-content-list">
+							<li class="hero-content-item">
+								<a href="#!" class="hero-content-link">
+									<img
+										srcset="./images/google-play-min.png 1x, ./images/google-play-2x-min.png 2x"
+										src="./images/google-play-min.png"
+										alt="Google Play App"
+									/>
+								</a>
+							</li>
+							<li class="hero-content-item">
+								<a href="#!" class="hero-content-link">
+									<img
+										srcset="./images/app-store-min.png 1x, ./images/app-store-2x-min.png 2x"
+										src="./images/app-store-min.png"
+										alt="App Store App"
+									/>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<img
+						srcset="./images/hero-img-min.png 1x, ./images/hero-img-2x-min.png 2x"
+						src="./images/hero-img-min.png"
+						alt="Smartphone"
+						class="hero-img"
+					/>
 				</div>
 			</div>
 		</header>
+		<main>
+			<section class="about">
+				<div class="container about-container">
+					<h2 class="about-title main-title">About Our App</h2>
+					<p class="about-descr main-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra nunc ante velit vitae.</p>
+					<div class="about-content">
+						<img
+							srcset="./images/about-img-min.png 1x, ./images/about-2x-min.png 2x"
+							src="./images/about-img-min.png"
+							alt=""
+							class="about-content-img"
+						/>
+						<ul class="about-list">
+							<li class="about-list-item">
+								<h3 class="about-list-title">Creative design</h3>
+								<p class="about-list-descr">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+							</li>
+							<li class="about-list-item">
+								<h3 class="about-list-title">easy to use</h3>
+								<p class="about-list-descr">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+							</li>
+							<li class="about-list-item">
+								<h3 class="about-list-title">Best user experince</h3>
+								<p class="about-list-descr">Lorem ipsum dolor sit amet, conse ctetur adipiscing elit.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
 		<script src="js/script.js"></script>
 	</body>
 </html>
