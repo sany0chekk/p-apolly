@@ -1,0 +1,61 @@
+.video {
+	padding-top: 60px;
+	padding-bottom: 115px;
+	position: relative;
+	background-image: url(../images/video-bg-min.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+		background-image: url(../images/video-bg-2x-min.jpg);
+	}
+
+	&-title {
+		margin-bottom: 40px;
+		color: $light-color;
+	}
+
+	&-descr {
+		color: $light-color;
+	}
+
+	&-wrap {
+		max-width: 400px;
+		width: 100%;
+		padding: 0 16px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+
+		&-img {
+			width: 100%;
+			border-radius: 5px;
+		}
+
+		&-play {
+			width: 70px;
+			height: 70px;
+			position: absolute;
+			border-radius: 50%;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			background-color: $light-color;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			box-shadow: 0px 0px 0px 5px rgba(255, 255, 255, 0.7), 0px 0px 0px 10px rgba(255, 255, 255, 0.5);
+			transition: box-shadow 0.3s $hover-effect;
+
+			&:hover {
+				box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.7);
+			}
+
+			&-icon {
+				fill: $blue-color;
+			}
+		}
+	}
+}

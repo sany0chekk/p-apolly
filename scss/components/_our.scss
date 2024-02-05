@@ -1,0 +1,78 @@
+.our {
+	padding: 60px 0;
+	background-image: url(../images/our-bg-min.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media screen and (min-device-pixel-ratio: 2), (min-resolution: 2dppx), (min-resolution: 192dpi) {
+		background-image: url(../images/our-bg-2x-min.jpg);
+	}
+
+	&-title,
+	&-descr {
+		color: $light-color;
+	}
+
+	&-descr {
+		margin-bottom: 32px;
+	}
+
+	& .swiper {
+		width: 100%;
+
+		&-button-prev,
+		&-button-next {
+			@media screen and (max-width: 1175px) {
+				display: none;
+			}
+		}
+
+		&-slide {
+			padding: 10px;
+			margin-bottom: 50px;
+			&-wrap {
+				padding: 20px 10px;
+				border-radius: 10px;
+				box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.24);
+				background-color: $light-color;
+			}
+
+			&-img {
+				margin: 0 auto;
+				margin-bottom: 12px;
+			}
+
+			&-title {
+				text-align: center;
+				font-weight: 600;
+				font-size: 25px;
+				color: $dark-color;
+				text-transform: uppercase;
+			}
+
+			&-subtitle {
+				margin-bottom: 18px;
+				text-align: center;
+				color: $dark-color;
+			}
+
+			&-descr {
+				text-align: center;
+				color: $grey-color;
+			}
+		}
+
+		&-pagination {
+			&-bullet {
+				width: 12px;
+				height: 12px;
+				background-color: #ffffffaf;
+
+				&-active {
+					background-color: $light-color;
+				}
+			}
+		}
+	}
+}

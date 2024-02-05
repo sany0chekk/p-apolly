@@ -2,7 +2,7 @@
 	padding: 60px 0;
 
 	&-descr {
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 	}
 
 	& .swiper {
@@ -17,7 +17,7 @@
 
 			& img {
 				height: 444px;
-				margin-bottom: 50px;
+				margin-bottom: 40px;
 			}
 		}
 
@@ -25,6 +25,13 @@
 		&-button-next {
 			@media screen and (max-width: 1175px) {
 				display: none;
+			}
+		}
+
+		&-pagination {
+			&-bullet {
+				width: 10px;
+				height: 10px;
 			}
 		}
 	}
