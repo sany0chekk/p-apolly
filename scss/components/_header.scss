@@ -29,6 +29,8 @@
 	}
 
 	&-burger {
+		display: flex;
+		flex-direction: column;
 		overflow: auto;
 		position: fixed;
 		width: 100%;
@@ -72,7 +74,7 @@
 			align-items: center;
 			justify-content: center;
 			margin-left: auto;
-			margin-bottom: 40px;
+			margin-bottom: 70px;
 
 			&-icon {
 				fill: $light-color;
@@ -83,6 +85,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 25px;
+			margin-bottom: auto;
 		}
 
 		&-item {
@@ -105,6 +108,24 @@
 
 			&:hover {
 				color: $blue-color;
+			}
+		}
+
+		&-social {
+			margin-top: 50px;
+			display: flex;
+			align-items: center;
+			gap: 30px;
+
+			&-item {
+				opacity: 0;
+				transform: translateY(20%);
+				transition: opacity 0.3s $hover-effect, transform 0.3s $hover-effect;
+
+				&-active {
+					opacity: 1;
+					transform: translateY(0);
+				}
 			}
 		}
 	}

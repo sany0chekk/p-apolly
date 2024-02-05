@@ -11,6 +11,10 @@
 			display: flex;
 			justify-content: center;
 
+			&-shadow {
+				background-color: transparent;
+			}
+
 			& img {
 				height: 444px;
 				margin-bottom: 50px;
